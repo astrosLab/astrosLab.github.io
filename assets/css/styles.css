@@ -1,0 +1,75 @@
+@font-face {
+	font-family: "Sterion";
+	src: url("../fonts/SterionRegular.ttf");
+}
+
+@font-face {
+	font-family: "JetBrainsRegular";
+	src: url("../fonts/JetBrainsMonoNerdFont-Regular.ttf");
+}
+
+body {
+	margin: 0 !important;
+	font-family: "JetBrainsRegular";
+}
+
+.navtitle {
+	color: white;
+	font-family: "Sterion";
+	font-size: 2em;
+	text-decoration: none;
+}
+
+.link {
+	color: white;
+	font-size: medium;
+	text-decoration-style: dotted;
+	transition: 0.3s ease-in-out;
+}
+
+.link:hover {
+	color: lightblue;
+}
+
+.topbar {
+	background-color: #050505;
+    width: 100vw;
+    color: white;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.intro {
+	background: linear-gradient(-165deg, lightblue 0%, darkblue 100%);
+	font-family: "Sterion";
+	color: white;
+	text-shadow: 3px 3px black;
+	height: 32em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.intropanelbar {
+	border: solid 5px red;
+	padding: 1em;
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+}
+
+.intropanel {
+	height: 12em;
+	width: 20em;
+	padding: 5px;
+	border-radius: 5px;
+	border: solid 2px white;
+	background-color: #050505;
+	box-shadow: 5px 5px 10px darkblue;
+}
+
