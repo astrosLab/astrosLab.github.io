@@ -25,21 +25,22 @@ body {
 	text-align: center;
 }
 
-.intropanelbarholder {
-	background-color: "#aa0000";
+.marquee-container {
+	width: 100%;
 	border-radius: 4px;
 	overflow: hidden;
-	width: 100%;
-}
-
-.intropanelbar {
-	border: solid 5px red;
 	display: flex;
-	gap: 2em;
-	white-space: nowrap
 }
 
-.intropanel {
+.marquee {
+	display: flex;
+	width: 100vw;
+	gap: 2em;
+	padding: 0 1em 0 1em;
+	animation: scroll 25s linear infinite;
+}
+
+.panel {
 	height: 15em;
 	width: 20em;
 	padding: 5px;
@@ -47,17 +48,12 @@ body {
 	border: solid 2px white;
 	background-color: #050505;
 	box-shadow: 5px 5px 10px darkblue;
-	animation: scroll 20s linear infinite;
 	flex-shrink: 0;
 }
 
 @keyframes scroll {
-	0% {
-		transform: translateX(0%);
-	}
-	100% {
-		transform: translateX(-100%);
-	}
+	from { transform: translateX(0%); }
+	to { transform: translateX(-100%); }
 }
 
 .image {
