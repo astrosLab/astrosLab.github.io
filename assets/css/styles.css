@@ -13,36 +13,6 @@ body {
 	font-family: "JetBrainsRegular";
 }
 
-.navtitle {
-	color: white;
-	font-family: "Sterion";
-	font-size: 2em;
-	text-decoration: none;
-}
-
-.link {
-	color: white;
-	font-size: medium;
-	text-decoration-style: dotted;
-	transition: 0.3s ease-in-out;
-}
-
-.link:hover {
-	color: lightblue;
-}
-
-.topbar {
-	background-color: #050505;
-    width: 100vw;
-    color: white;
-    padding: 10px 5px 10px 5px;
-    text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 20px;
-}
-
 .intro {
 	background: linear-gradient(-165deg, lightblue 0%, darkblue 100%);
 	font-family: "Sterion";
@@ -55,21 +25,46 @@ body {
 	text-align: center;
 }
 
+.intropanelbarholder {
+	background-color: "#aa0000";
+	border-radius: 4px;
+	overflow: hidden;
+	width: 100%;
+}
+
 .intropanelbar {
 	border: solid 5px red;
-	padding: 1em;
 	display: flex;
-	gap: 20px;
-	justify-content: center;
+	gap: 2em;
+	white-space: nowrap
 }
 
 .intropanel {
-	height: 12em;
+	height: 15em;
 	width: 20em;
 	padding: 5px;
 	border-radius: 5px;
 	border: solid 2px white;
 	background-color: #050505;
 	box-shadow: 5px 5px 10px darkblue;
+	animation: scroll 20s linear infinite;
+	flex-shrink: 0;
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+.image {
+	object-fit: cover;
+	border: 1px white solid;
+	border-radius: 5px;
+	height: 70%;
+	width: 100%;
 }
 

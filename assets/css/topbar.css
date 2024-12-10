@@ -1,0 +1,42 @@
+@font-face {
+	font-family: "JetBrainsRegular";
+	src: url("../fonts/JetBrainsMonoNerdFont-Regular.ttf");
+}
+
+.navtitle {
+	color: white;
+	font-family: "Sterion";
+	font-size: 2em;
+	text-decoration: none;
+}
+
+.link {
+	color: white;
+	font-size: medium;
+	text-decoration-style: dotted;
+	transition: 0.3s ease-in-out;
+}
+
+.link:hover {
+	color: lightblue;
+}
+
+.topbar {
+	border: none;
+	background-color: #050505;
+    width: 99.5%;
+    color: white;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.topbarlinks {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
