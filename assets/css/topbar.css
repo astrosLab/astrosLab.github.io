@@ -10,17 +10,6 @@
 	text-decoration: none;
 }
 
-.link {
-	color: white;
-	font-size: medium;
-	text-decoration-style: dotted;
-	transition: 0.3s ease-in-out;
-}
-
-.link:hover {
-	color: lightblue;
-}
-
 .topbar {
 	border: none;
 	background-color: #050505;
@@ -33,10 +22,3 @@
 	gap: 20px;
 }
 
-.topbarlinks {
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 20px;
-}
