@@ -40,7 +40,7 @@ h2 {
 	height: 4em;
 	width: 4em;
 	animation: fadein 1s ease-out forwards;
-	animation-delay: 200ms;
+	animation-delay: 300ms;
 	opacity: 0;
 }
 
@@ -99,12 +99,24 @@ h2 {
 	margin: 1em 0 1em 0;
 }
 
+.project-image {
+	width: 20em;
+	max-width: 100%;
+	object-fit: cover;
+}
+
 .repo-button {
 	background-color: #050505;
 	padding: 1em;
 	border-radius: 1em;
 	text-decoration: none;
 	color: white;
+}
+
+@media(max-width: 1650px) {
+	.about-me p {
+		font-size: 1.8em;
+	}
 }
 
 @media (max-width: 1500px) {
@@ -129,6 +141,33 @@ h2 {
 
 	.project {
 		display: block;
+	}
+}
+
+@media (max-width: 410px) {
+	.pfp {
+		width: 15em;
+		height: 15em;
+	}
+
+	.about-me {
+		display: block;
+		margin: 0 0em 0 0em;
+	}
+
+	.about-me p {
+		font-size: 1.5em;
+	}
+	
+	.project-container {
+		margin: 0 0em 0 0em;	
+	}
+}
+
+@media (max-width: 330px) {
+	.pfp {
+		width: 12em;
+		height: 12em;
 	}
 }
 
