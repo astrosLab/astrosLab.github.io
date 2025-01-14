@@ -11,6 +11,9 @@
 body {
 	margin: 0 !important;
 	font-family: "JetBrainsRegular";
+	background: radial-gradient(#181A18 0%, #050505 100%);
+	align-items: center;
+	text-align: center;
 }
 
 h1 {
@@ -24,70 +27,43 @@ h2 {
 	text-align: center;
 }
 
-.intro {
-	background: linear-gradient(-165deg, lightblue 0%, darkblue 100%);
-	font-family: "Sterion";
+.title {
 	color: white;
-	text-shadow: 3px 3px black;
-	height: 32em;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
+	font-family: "Sterion";
+	font-size: 3em;
+	text-decoration: none;
+	margin-bottom: 0.5em;
+	animation: fadein 1s ease-out forwards;
 }
 
-.marquee-container {
-	width: 100%;
-	border-radius: 4px;
-	overflow: hidden;
-	display: flex;
-}
-
-.marquee {
-	display: flex;
-	width: 140vw;
-	gap: 2em;
-	padding: 0 1em 0 1em;
-	animation: scroll 25s linear infinite;
-}
-
-.panel {
-	height: 15em;
-	width: 20em;
-	padding: 5px;
-	border-radius: 5px;
-	border: solid 2px white;
-	background-color: #050505;
-	box-shadow: 5px 5px 10px darkblue;
-	flex-shrink: 0;
-}
-
-@keyframes scroll {
-	from { transform: translateX(0%); }
-	to { transform: translateX(-100%); }
-}
-
-.image {
-	object-fit: cover;
-	border: 2px white solid;
-	border-radius: 2px;
-	height: 70%;
-	width: 100%;
-}
-
-.main-body {
-	background-color: #050505;
-	height: 100em;
-	padding: 1em;
-	justify-content: center;
+.icon {
+	height: 4em;
+	width: 4em;
+	animation: fadein 1s ease-out forwards;
+	animation-delay: 200ms;
+	opacity: 0;
 }
 
 .about-me {
 	display: flex;
 	padding: 2em;
-	margin: 0 2em 0 0em;
+	margin: 0 20em 0 20em;
 	gap: 2em;
-	border: 2px red solid;
+	justify-content: center;
+	animation: fadein 1s ease-out forwards;
+	animation-delay: 400ms;
+	opacity: 0;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+		transform: translateY(2em);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 .about-me p {
@@ -98,6 +74,61 @@ h2 {
 .pfp {
 	border-radius: 50%;
 	border: 5px solid white;
-	height: 100%;
+	width: 20em;
+	height: 20em;
+}
+
+.project-container {
+	margin: 0 20em 0 20em;
+	padding: 1em;
+		
+}
+
+.project {
+	color: white;
+	background-color: #181A187F;
+	padding: 1em;
+	clear: both;
+	border-radius: 1em;
+	display: flex;
+	gap: 2em;
+	animation: fadein 1s ease-out forwards;
+	animation-delay: 600ms;
+	opacity: 0;
+	column-gap: 1em;
+	margin: 1em 0 1em 0;
+}
+
+.repo-button {
+	background-color: #050505;
+	padding: 1em;
+	border-radius: 1em;
+	text-decoration: none;
+	color: white;
+}
+
+@media (max-width: 1500px) {
+	.about-me {
+		margin: 0 5em 0 5em;
+	}
+
+	.project-container {
+		margin: 0 5em 0 5em;
+	}
+}
+
+@media (max-width: 1000px) {
+	.about-me {
+		display: block;
+		margin: 0 2em 0 2em;
+	}
+	
+	.project-container {
+		margin: 0 2em 0 2em;
+	}
+
+	.project {
+		display: block;
+	}
 }
 

@@ -4,146 +4,74 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="./assets/css/styles.css">
-		<link rel="stylesheet" href="./assets/css/topbar.css">
 		<title>Home</title>
 	</head>
 	<body>
-		<div class="topbar">
-			<a href="index.html" class="navtitle">
-					Astro's Lab
+		<p class="title">
+			Astro's Lab
+		</p>
+		<div class="links">
+			<a href="https://github.com/astrosLab">
+				<img
+					src="./assets/images/github.png"
+					alt="My Github Profile"
+					class="icon"
+				>
 			</a>
 		</div>
-		<div class="intro">
-			<div>
-				<h1>
-					Welcome to my <br/>
-					Portfolio!
-				</h1>
-			</div>
-			<div class="marquee-container">			
-				<div class="marquee">
-					<div class="panel">
-						<h3>3D Renderer</h3>
-						<img 
-							src="./assets/images/3DRenderer.gif" 
-							alt="3D Renderer"
-							class="image"
-						>
-					</div>
-					<div class="panel">
-						<h3>Ring 3D Model</h3>
-						<img
-							src="./assets/images/ring3D.png"
-							alt="Ring 3D Model"
-							class="image"
-						>
-					</div>
-					<div class="panel">
-						<h3>CPU Architecture</h3>
-						<img
-							src="./assets/images/cpuCode.png"
-							alt="CPU Architecture"
-							class="image"
-						>			
-					</div>
-					<div class="panel">
-						<h3>Home Labbing</h3>
-						<img
-							src="./assets/images/homelab.webp"
-							alt="Home Lab"
-							class="image"
-						>			
-					</div>
-					<div class="panel">
-						<h3>Logic Gates</h3>
-						<img
-							src="./assets/images/register.webp"
-							alt="1 Bit Register"
-							class="image"
-						>			
-					</div>
-					<div class="panel">
-						<h3>Game Development</h3>
-						<img
-							src="./assets/images/game.png"
-							alt="WIP Game for School"
-							class="image"
-						>			
-					</div>
-					<div class="panel"> <h3>test7</h3> </div>
-				</div>
-				<div class="marquee">
-					<div class="panel">
-						<h3>3D Renderer</h3>
-						<img 
-							src="./assets/images/3DRenderer.gif" 
-							alt="3D Renderer"
-							class="image"
-						>
-					</div>
-					<div class="panel">
-						<h3>Ring 3D Model</h3>
-						<img
-								src="./assets/images/ring3D.png"
-								alt="Ring 3D Model"
-								class="image"
-						>
-					</div>
-					<div class="panel">
-						<h3>CPU Architecture</h3>
-						<img
-							src="./assets/images/cpuCode.png"
-							alt="CPU Architecture"
-							class="image"
-						>			
-					</div>
-					<div class="panel">
-						<h3>Home Labbing</h3>
-						<img
-							src="./assets/images/homelab.webp"
-							alt="Home Lab"
-							class="image"
-						>			
-					</div>
-					<div class="panel">
-						<h3>Logic Gates</h3>
-						<img
-							src="./assets/images/register.webp"
-							alt="1 Bit Register"
-							class="image"
-						>			
-					</div>
-					<div class="panel">
-						<h3>Game Development</h3>
-						<img
-							src="./assets/images/game.png"
-							alt="WIP Game for School"
-							class="image"
-						>			
-					</div>
-					<div class="panel"> <h3>test7</h3> </div>
-				</div>
+		<div class="about-me">
+			<img
+				src="./assets/images/profilepicture.webp"
+				alt="My Profile Picture"
+				class="pfp"
+			>
+			<div style="align-items: center">
+				<h2>About Me</h2>
+				<p>
+					Hi, I'm Astro. It's what I go by online.
+					<br>
+					I'm into programming and I love learning about
+					low-level concepts, such as CPU architecture, logic gates, and 3D rendering.
+				</p>
 			</div>
 		</div>
-		<div class="main-body">
-			<h2>About Me</h2>
-			<div class="about-me">
-				<div style="border: 1px solid red; width: 20%;">
+		<div class="project-container">
+			<div class="project">
 				<img
-					src="./assets/images/profilepicture.webp"
-					alt="My Profile Picture"
-					class="pfp"
+					src="./assets/images/3DRenderer.gif"
+					alt="3D Renderer"
+					style="max-width: 20em; max-height: 20em;"
 				>
-				</div>
-				<div style="border: 1px solid red; width: 80%; align-items: center">
-				<p>
-					I usually go by Astro online.
-					<br>
-					I'm into programming and I love learning about the
-					<br>
-					nitty-gritty details, like low-level concepts.
-				</p>
-				</div>
+				<div style="align-items: center;">
+					<h2>3D Renderer</h2>
+					<h3>
+						A 3D renderer made in C++ using the SFML (Simple Fast Multimedia Library).
+						It's very barebones and can only handle wireframe rectangular prisms for now.
+						One day, I might make one using OpenGL, which is more widely used for 3D graphics.
+					</h3>
+					<a href="https://github.com/astrosLab/3DRendererSFML" class="repo-button">
+						Github Repository
+					</a>
+				</div>	
+			</div>
+			<div class="project">
+				<img
+					src="./assets/images/cpuISA.png"
+					alt="3D Renderer"
+					style="max-width: 20em; max-height: 20em;"
+				>
+				<div style="align-items: center;">
+					<h2>ASTRISC CPU</h2>
+					<h3>
+						A 16 Bit CPU, the most powerful of all my CPUs until now.
+						The name is a combination of 'Astro' (my username) and RISC, which means
+						'Reduced Instruction Set Computer'. The repository includes an emulator
+						of the CPU to simplify usage.
+					</h3>
+					<a href="https://github.com/astrosLab/ASTRISC-16" class="repo-button">
+						Github Repository
+					</a>
+				</div>	
 			</div>
 		</div>
 	</body>
