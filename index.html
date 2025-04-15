@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="./assets/css/styles.css">
-		<title>Home</title>
+		<title>Portfolio</title>
 	</head>
 	<body>
 		<p class="title">
@@ -28,14 +28,18 @@
 			<div style="align-items: center">
 				<h2>About Me</h2>
 				<p>
-					Hi, I'm Astro. It's what I go by online.
+					Hi, I'm Astro.
 					<br>
 					I'm into programming and I love learning about
 					low-level concepts, such as CPU architecture, logic gates, and 3D rendering.
 				</p>
 			</div>
-		</div>
+		</div>	
 		<div class="project-container">
+			<h2 style="animation: fadein 1s ease-out forwards">
+				Personal Projects
+				<hr>
+			</h2>
 			<div class="project">
 				<img
 					src="./assets/images/3DRenderer.gif"
@@ -45,9 +49,7 @@
 				<div style="align-items: center; width: 100%;">
 					<h2>3D Renderer</h2>
 					<h3>
-						A 3D renderer made in C++ using the SFML (Simple Fast Multimedia Library).
-						It's very barebones and can only handle wireframe rectangular prisms for now.
-						One day, I might make one using OpenGL, which is more widely used for 3D graphics.
+						A 3D renderer made in C++. I might try OpenGL eventually.
 					</h3>
 					<a href="https://github.com/astrosLab/3DRendererSFML" class="repo-button">
 						Github Repository
@@ -56,20 +58,33 @@
 			</div>
 			<div class="project">
 				<img
-					src="./assets/images/cpuISA.png"
+					src="./assets/images/cpu.png"
 					alt="3D Renderer"
 					class="project-image"
 				>
 				<div style="align-items: center; width: 100%;">
 					<h2>ASTRISC CPU </h2>
 					<h3>
-						A 16 Bit CPU, the most powerful of all my CPUs until now.
-						The name is a combination of 'Astro' (my username) and RISC, which means
-						'Reduced Instruction Set Computer'. The repository includes an emulator,
-						GUI, and assembler to simplify usage. The emulator is made with C++, the
-						GUI is made with SFML and C++, and the assembler is made in Python.
+						A 16 Bit CPU, the repo includes an emulator,
+						GUI, and assembler. I'm planning to create a plugin system, and a custom progamming language.
 					</h3>
 					<a href="https://github.com/astrosLab/ASTRISC-16" class="repo-button">
+						Github Repository
+					</a>
+				</div>	
+			</div>
+			<div class="project">
+				<img
+					src="./assets/images/m5stick.jpg"
+					alt="ToolStick Firmware"
+					class="project-image"
+				>
+				<div style="align-items: center; width: 100%;">
+					<h2>ToolStick</h2>
+					<h3>
+						A modular firmware I made for the M5Stick, it has a simple menu and a program/service system.
+					</h3>
+					<a href="https://github.com/astrosLab/ToolStick" class="repo-button">
 						Github Repository
 					</a>
 				</div>	
@@ -87,6 +102,39 @@
 						A bit can store only either one, or zero.
 					</h3>
 				</div>	
+			</div>	
+			<div class="project">
+				<img
+					src="./assets/images/homelab.webp"
+					alt="My Home Lab"
+					class="project-image"
+				>
+				<div style="align-items: center; width: 100%;">
+					<h2>Home Labbing</h2>
+					<h3>
+						This is my home lab.
+						I bought a cheap refurbished computer in installed Proxmox,
+						a hypervisor (it runs virtual machines), and my Raspberry Pi 4
+						acts like a NAS (network attached storage).
+					</h3>
+				</div>	
+			</div>
+			<h2 style="animation: fadein 1s ease-out forwards">
+				School Assignments
+				<hr>
+			</h2>
+			<div class="project">
+				<img
+					src="./assets/images/turtlegame.png"
+					alt="Frogger Clone"
+					class="project-image"
+				>
+				<div style="align-items: center; width: 100%;">
+					<h2>"Frogger"</h2>
+					<h3>
+						A difficult frogger clone made in Greenfoot.
+					</h3>
+				</div>	
 			</div>
 			<div class="project">
 				<img
@@ -97,31 +145,12 @@
 				<div style="align-items: center; width: 100%;">
 					<h2>My Game</h2>
 					<h3>
-						Work in progress.<br>
-						This is a game I'm working on in school, it takes place in space and I'm making it without
-						a game engine. Instead I'm using C++ and SFML.
+						Not being worked on.<br>
+						This is a game I was working on in school, it takes place in space and I was making it without
+						a game engine. Instead I was using C++ and SFML.
 					</h3>
 				</div>	
 			</div>
-			<div class="project">
-				<img
-					src="./assets/images/homelab.webp"
-					alt="My Home Lab"
-					class="project-image"
-				>
-				<div style="align-items: center; width: 100%;">
-					<h2>Home Labbing</h2>
-					<h3>
-						This is my home lab, it looks quite messy but its useful.
-						I bought a cheap refurbished computer in installed Proxmox,
-						a hypervisor (it runs virtual machines), and my Raspberry Pi 4
-						acts like a NAS (network attached storage).
-					</h3>
-				</div>	
-			</div>
-			<h2 style="animation: fadein 1s ease-out forwards">
-				School Assignments
-			</h2>
 			<div class="project">
 				<img
 					src="./assets/images/theOneRing.png"
