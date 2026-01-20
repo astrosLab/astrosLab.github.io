@@ -1,5 +1,4 @@
 import "./style.css";
-import { createIconLink } from "./iconLink";
 
 const title = document.querySelector<HTMLHeadingElement>("#title")!;
 const content = document.querySelector<HTMLDivElement>("#content")!;
@@ -34,7 +33,7 @@ window.addEventListener("DOMContentLoaded", () => {
     container.className = "project";
 
     const thumbnail = document.createElement("img");
-    thumbnail.src = image;
+    thumbnail.src = image!;
     thumbnail.className = "thumbnail";
 
     const infobox = document.createElement("div");
@@ -44,27 +43,26 @@ window.addEventListener("DOMContentLoaded", () => {
 	titlebox.className = "titlebox";
 
     const infotitle = document.createElement("h3");
-    infotitle.innerText = title;
+    infotitle.innerText = title!;
 
 	if (link) {
-		const icon = el.getAttribute("icon");
 		const link = el.getAttribute("link");
 
 		const anchor = document.createElement("a");
-		anchor.href = link;
+		anchor.href = link!;
 		anchor.target = "_blank";
 
 		const img = document.createElement("img");
 		img.src = "/icons/github.svg";
-		img.classList = "iconlink";
-		img.style = "transform: translateY(8px);";
+		img.className = "iconlink";
+		img.style.transform = "translateY(8px)";
 
 		anchor.appendChild(img);
     	titlebox.appendChild(anchor);
 	}
  
 	const infotext = document.createElement("p");
-    infotext.innerText = description;
+    infotext.innerText = description!;
 
     titlebox.appendChild(infotitle);
 
@@ -84,12 +82,12 @@ window.addEventListener("DOMContentLoaded", () => {
     const link = el.getAttribute("link");
 
     const anchor = document.createElement("a");
-    anchor.href = link;
+    anchor.href = link!;
     anchor.target = "_blank";
 
     const img = document.createElement("img");
-    img.src = icon;
-    img.classList = "iconlink";
+    img.src = icon!;
+    img.className = "iconlink";
 
     anchor.appendChild(img);
 
