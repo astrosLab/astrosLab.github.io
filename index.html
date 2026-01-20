@@ -1,239 +1,110 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="./assets/css/styles.css">
-		<title>Portfolio</title>
-	</head>
-	<body>
-		<p class="title">
-			Astro's Lab
-		</p>
-		<div class="links">
-			<a href="https://github.com/astrosLab">
-				<img
-					src="./assets/images/github.png"
-					alt="My Github Profile"
-					class="icon"
-				>
-			</a>
-		</div>
-		<div class="about-me">
-			<img
-				src="./assets/images/profilepicture.webp"
-				alt="My Profile Picture"
-				class="pfp"
-			>
-			<div style="align-items: center">
-				<h2>About Me</h2>
-				<p>
-					Hi, I'm Astro.
-					<br>
-					I'm into programming and I love learning about
-					low-level concepts, such as CPU architecture, logic gates, and 3D rendering.
-				</p>
-			</div>
-		</div>	
-		<div class="project-container">
-			<h2 style="animation: fadein 1s ease-out forwards">
-				Personal Projects
-				<hr>
-			</h2>
-			<div class="project">
-				<img
-					src="./assets/images/3DRenderer.gif"
-					alt="3D Renderer"
-					class="project-image"
-				>
-				<div style="align-items: center; width: 100%;">
-					<h2>3D Renderer</h2>
-					<h3>
-						A 3D renderer made in C++. I might try OpenGL eventually.
-					</h3>
-					<a href="https://github.com/astrosLab/3DRendererSFML" class="repo-button">
-						Github Repository
-					</a>
-				</div>	
-			</div>
-			<div class="project">
-				<img
-					src="./assets/images/cpu.png"
-					alt="3D Renderer"
-					class="project-image"
-				>
-				<div style="align-items: center; width: 100%;">
-					<h2>ASTRISC CPU </h2>
-					<h3>
-						A 16 Bit CPU, the repo includes an emulator,
-						GUI, and assembler. I'm planning to create a plugin system, and a custom progamming language.
-					</h3>
-					<a href="https://github.com/astrosLab/ASTRISC-16" class="repo-button">
-						Github Repository
-					</a>
-				</div>	
-			</div>
-			<div class="project">
-				<img
-					src="./assets/images/m5stick.jpg"
-					alt="ToolStick Firmware"
-					class="project-image"
-				>
-				<div style="align-items: center; width: 100%;">
-					<h2>ToolStick</h2>
-					<h3>
-						A modular firmware I made for the M5Stick, it has a simple menu and a program/service system.
-					</h3>
-					<a href="https://github.com/astrosLab/ToolStick" class="repo-button">
-						Github Repository
-					</a>
-				</div>	
-			</div>
-			<div class="project">
-				<img
-					src="./assets/images/register.webp"
-					alt="1 Bit Register"
-					class="project-image"
-				>
-				<div style="align-items: center; width: 100%;">
-					<h2>Logic Gates</h2>
-					<h3>
-						This one's a quick little project I did, I made a circuit capable of storing a single bit.
-						A bit can store only either one, or zero.
-					</h3>
-				</div>	
-			</div>	
-			<div class="project">
-				<img
-					src="./assets/images/homelab.webp"
-					alt="My Home Lab"
-					class="project-image"
-				>
-				<div style="align-items: center; width: 100%;">
-					<h2>Home Labbing</h2>
-					<h3>
-						This is my home lab.
-						I bought a cheap refurbished computer in installed Proxmox,
-						a hypervisor (it runs virtual machines), and my Raspberry Pi 4
-						acts like a NAS (network attached storage).
-					</h3>
-				</div>	
-			</div>
-			<h2 style="animation: fadein 1s ease-out forwards">
-				School Assignments
-				<hr>
-			</h2>
-			<div class="project">
-				<img
-					src="./assets/images/turtlegame.png"
-					alt="Frogger Clone"
-					class="project-image"
-				>
-				<div style="align-items: center; width: 100%;">
-					<h2>"Frogger"</h2>
-					<h3>
-						A difficult frogger clone made in Greenfoot.
-					</h3>
-				</div>	
-			</div>
-			<div class="project">
-				<img
-					src="./assets/images/minecraftmod.png"
-					alt="Minecraft Mod"
-					class="project-image"
-				>
-				<div style="align-items: center; width: 100%;">
-					<h2>Minecraft Mod</h2>
-					<h3>
-						A simple Minecraft Education Edition mod that includes a block that rotates when you interact with it.
-					</h3>
-				</div>	
-			</div>
-			<div class="project">
-				<img
-					src="./assets/images/reciprocrator.png"
-					alt="Reciprocrator"
-					class="project-image"
-				>
-				<div style="align-items: center; width: 100%;">
-					<h2>Reciprocrator</h2>
-					<h3>
-						A CAD assembly of a reciprocrator made up of a bunch of parts made in Inventor.
-					</h3>
-				</div>	
-			</div>
-			<div class="project">
-				<img
-					src="./assets/images/game.png"
-					alt="My Game"
-					class="project-image"
-				>
-				<div style="align-items: center; width: 100%;">
-					<h2>My Game</h2>
-					<h3>
-						Not being worked on.<br>
-						This is a game I was working on in school, it takes place in space and I was making it without
-						a game engine. Instead I was using C++ and SFML.
-					</h3>
-				</div>	
-			</div>
-			<div class="project">
-				<img
-					src="./assets/images/theOneRing.png"
-					alt="The One Ring"
-					class="project-image"
-				>
-				<div style="align-items: center; width: 100%;">
-					<h2>Ring 3D Model</h2>
-					<h3>
-						A 3D Model of a ring from a TV show I made in Blender for an assignment.
-						I find that I did a pretty good job on it, so I've decided to show it off.
-					</h3>
-				</div>	
-			</div>
-			<div class="project">
-				<img
-					src="./assets/images/dungeon.png"
-					alt="Low Poly Dungeon"
-					class="project-image"
-				>
-				<div style="align-items: center; width: 100%;">
-					<h2>Low Poly Dungeon</h2>
-					<h3>
-						A low poly dungeon that I made, it has a few props in it. A barrel, a table, a hammer, a sword,
-						some torches, and a few other decorations. It's made in Blender
-					</h3>
-				</div>	
-			</div>
-			<div class="project">
-				<img
-					src="./assets/images/playground.png"
-					alt="Playground"
-					class="project-image"
-				>
-				<div style="align-items: center; width: 100%;">
-					<h2>SketchUp Playground</h2>
-					<h3>
-						A simple playground made in SketchUp, it uses components for flexibility. By using components
-						any change to a single elemnt, like if you change the color of a single roof it changes it for
-						all of them. This makes modifying everything of one type much more efficient.
-					</h3>
-				</div>	
-			</div>
-			<div class="project">
-				<img
-					src="./assets/images/uranus.png"
-					alt="Uranus"
-					class="project-image"
-				>
-				<div style="align-items: center; width: 100%;">
-					<h2>Uranus Mathematica</h2>
-					<h3>
-						For an assignment in Mathematica, I made Uranus and some of it's moons in Mathematica.
-						The planet and the orbit of its moons are tilted by about 90 degrees. The planet rotates
-						around itself, and the planets and moons orbit too.
-					</h3>
-				</div>	
-			</div>
-	</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astro's Lab</title>
+  </head>
+  <body>
+    <div class="title-container">
+        <h1 id="title">Astro's Lab</h1>
+        <h1 class="cursor">█</h1>
+    </div>
+    <div id="content" style="opacity: 0;">
+        <div class="about">
+            <div>
+                <img 
+                    class="profile"
+                    src="/images/profile.webp"
+                    alt="Profile Picture"
+                >
+            </div>
+            <div class="info">
+                <div style="display: flex; align-items: center; gap: 25px;">
+                    <h2>About Me</h2>
+                    <p style="font-weight: bold;">
+                        ⟟ Canada
+                    </p>
+                </div>
+                <p>
+                    Hey, I'm Astro.
+                    I'm a developer who loves to program and learn about low-level things. 
+                </p>
+                <div class="links">
+                    <icon-link icon="/icons/github.svg" link="https://github.com/astrosLab"></icon-link>
+                </div>
+            </div>
+        </div>
+        <div>
+        </div>
+        <div class="toolkit-container"> 
+            <div class="toolkit-section">
+                <h3>Environment</h3>
+                <div>
+                    <icon-link icon="/icons/nixos.svg" link="https://nixos.org"></icon-link>
+                    <icon-link icon="/icons/neovim.svg" link="https://neovim.io"></icon-link>
+                    <icon-link icon="/icons/firefoxbrowser.svg" link="https://firefox.com"></icon-link>
+                    <icon-link icon="/icons/discord.svg" link="https://discord.com"></icon-link>
+                    <icon-link icon="/icons/github.svg" link="https://github.com"></icon-link>
+                </div>
+            </div>
+            <div class="toolkit-section">
+                <h3>Skills</h3>
+                <div>
+                    <icon-link icon="/icons/cplusplus.svg" link="https://cplusplus.com"></icon-link>
+                    <icon-link icon="/icons/linux.svg" link="https://en.wikipedia.org/wiki/Linux"></icon-link>
+                    <icon-link icon="/icons/proxmox.svg" link="https://proxmox.com"></icon-link>
+                    <icon-link icon="/icons/python.svg" link="https://python.org"></icon-link>
+                    <icon-link icon="/icons/typescript.svg" link="https://typescriptlang.org"></icon-link>
+                    <icon-link icon="/icons/git.svg" link="https://git-scm.com"></icon-link>
+                    <icon-link icon="/icons/html5.svg" link="https://w3.org/TR/html"></icon-link>
+                    <icon-link icon="/icons/css.svg" link="https://w3.org/Style/CSS/"></icon-link>
+                </div>
+            </div>
+            <div class="toolkit-section">
+                <h3>Learning Goals</h3>
+                <div>
+                    <icon-link icon="/icons/rust.svg" link="https://rust-lang.org"></icon-link>
+                    <icon-link icon="/icons/opengl.svg" link="https://opengl.org"></icon-link>
+                </div>
+            </div>
+        </div>
+        <div class="project-container">
+            <h2>Projects</h2>	
+            <project 
+				title="ASTRISC CPU"
+				link="https://github.com/astrosLab/ASTRISC-16-V2"
+				description="A custom 16-bit CPU, currently on version 2."
+				image="/images/projects/cpu.png"
+			></project>
+            <project 
+				title="Software Renderer (SDL3)"
+				description="My newest 3D renderer with lighting, .obj loading, and more written in C using SDL3. (Currently fixed camera)"
+				image="/images/projects/3dnew.png"
+			></project>
+            <project 
+				title="Software/Hardware Renderer"
+				description="Same SDL3 software renderer, but instead of rendering to a window, an ESP32 sends pixel data to an FPGA to draw to the screen."
+				image="/images/projects/gpu.jpg"
+			></project>
+            <project 
+				title="Software Renderer (SFML)"
+				link="https://github.com/astrosLab/3DRendererSFML"
+				description="My previous wireframe 3D renderer written in C++ using SFML."
+				image="/images/projects/3d.png"
+			></project>
+            <project 
+				title="Nucleo"
+				description="An unfinished modular Lua based microcontroller 'OS'. Has a shell, programs, and a Lua REPL."
+				image="/images/projects/nucleo.jpg"
+			></project>
+            <project 
+				title="Proxmox Server"
+				description="My personal server (refurbished computer) running Proxmox, a hypervisor that runs virtual machines."
+				image="/images/projects/proxmox.png"
+			></project>
+        </div>
+    </div> 
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
